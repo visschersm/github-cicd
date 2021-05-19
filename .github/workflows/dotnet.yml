@@ -1,8 +1,10 @@
 name: Dotnet Github Actions Demo
 on: [push]
-steps:
-- uses: actions/checkout@v2
-- uses: actions/setup-dotnet@v1
-  with:
-    dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
-- run: dotnet build github-cicd.csproj
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    - run: dotnet build github-cicd.csproj
