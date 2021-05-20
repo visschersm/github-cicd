@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2-beta
+      - uses: actions/checkout@v2-beta@master
         with:
           # Private version of https://github.com/actions/hello-world-docker-action
-          repository: visschersm/github-otherrepo@master
+          repository: visschersm/github-otherrepo
           token: ${{ github.token }} # `GitHub_PAT` is a secret that contains your PAT to clone that private repo
       - name: Run the private action
         uses: ./
