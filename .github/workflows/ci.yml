@@ -12,7 +12,8 @@ jobs:
         with:
           repository: visschersm/github-otherrepo
           token: ${{ github.token }}
+          ref: "other-repo"
       - name: Run the other action
-        uses: ./
+        uses: "other-repo"
         with:
           who-to-greet: "Mona the Octocat"
