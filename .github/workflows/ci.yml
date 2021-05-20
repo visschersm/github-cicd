@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2-beta@master
+      - uses: actions/checkout@v2@master
         with:
           # Private version of https://github.com/actions/hello-world-docker-action
           repository: visschersm/github-otherrepo
