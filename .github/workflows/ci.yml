@@ -11,7 +11,7 @@ jobs:
         with:
           # Private version of https://github.com/actions/hello-world-docker-action
           repository: visschersm/github-otherrepo
-          ref: refs/tags/master
+          ref: master
           # token: ${{ secrets.GitHub_PAT }} # `GitHub_PAT` is a secret that contains your PAT to clone that private repo
       - name: Run the other action
         uses: ./
