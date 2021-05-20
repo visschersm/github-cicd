@@ -11,6 +11,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: visschersm/github-otherrepo
+          token: ${{ github.token }}
       - name: Run the other action
         uses: ./
         with:
